@@ -61,5 +61,15 @@ dynamic scoping is just returning the function body itself, and it is evaluate i
 
  [`(lambda (,x) ,e)
    (Closure exp env)]
+ 
+ <exp> ::= <var>
+        |  (lambda (<var>) <exp>)
+        |  (<exp> <exp>)
    
 ```
+
+
+REF:
+
+* http://matt.might.net/articles/implementing-a-programming-language/
+* http://www.yinwang.org/blog-cn/2012/08/01/interpreter/
